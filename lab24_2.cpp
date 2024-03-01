@@ -24,7 +24,26 @@ int main(){
 	line_up.insert(loc,"Oscar");
 	
 	//Write your code here
-	
+	line_up.push_back("Luffy");
+	line_up.push_back("Sanji");
+	line_up.push_back("Nami");
+	line_up.pop_front();
+	line_up.pop_front();
+
+	list<string>::iterator current = line_up.begin();
+	current++; current++;
+	line_up.insert(current,"Narutu");
+	line_up.push_front("Prayath");
+
+	current--; current--; current--;
+	line_up.insert(current,"Tony");
+
+
+	line_up.erase(current);
+	line_up.pop_front();
+	line_up.pop_front();
+	line_up.pop_front();
+
 	printList(line_up);
 		
 	return 0;
